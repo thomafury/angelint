@@ -1,0 +1,33 @@
+nav {
+  background-color: #ffffff;
+  overflow: hidden;
+  margin-top: 20px; /* Adds margin to the top of the navbar */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li:first-child {
+  margin-right: 300px; /* Adds distance between the first item and the rest */
+}
+
+nav ul li:not(:first-child) {
+  margin-right: 10px; /* Adds distance between the other items */
+}
+
+nav ul li a {
+  display: block;
+  color: rgb(8, 8, 8);
+  text-align: center;
+  padding: 10px 12px; /* Adjusts the padding for the items */
+  text-decoration: none; /* Removes the underline from links */
+}
+
+nav ul li a:hover {
+  color: #3d2fdb;
+}
