@@ -190,7 +190,7 @@ const Home = () => {
           <span>Quality assurance</span>
         </div>
       </div>
-      <div className="company-image">
+      <div className="company-image" style={{ paddingTop: "50px" }}>
         <img
           src="https://www.bluetaletechno.com/images/about/about-image.svg"
           alt="Company Image"
