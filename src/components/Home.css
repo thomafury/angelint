@@ -1,3 +1,56 @@
+/* Styles for the circle designs */
+.page-wrapper {
+  position: relative;
+  overflow: hidden; /* Ensure circles stay within the page bounds */
+  min-height: 100vh; /* Ensure the wrapper covers the whole viewport height */
+}
+
+.circle-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Ensure it doesn't interfere with other elements */
+}
+
+.top-right-circles {
+  top: 0;
+  right: 0;
+}
+
+.bottom-left-circles {
+  bottom: 0;
+  left: 0;
+}
+
+.circle {
+  position: absolute;
+  background-color: rgba(61, 47, 219, 0.1);
+  border: 2px solid rgba(61, 47, 219, 0.5);
+  border-radius: 50%;
+  filter: blur(5px);
+}
+
+.circle.small {
+  width: 50px;
+  height: 50px;
+}
+
+.circle.medium {
+  width: 100px;
+  height: 100px;
+}
+
+.circle.large {
+  width: 150px;
+  height: 150px;
+}
+
+/* Create partial circles using clip-path */
+.circle.partial {
+  clip-path: ellipse(50% 75% at 50% 50%);
+}
+
+/* Navbar styles */
 nav {
   background-color: #ffffff;
   overflow: hidden;
@@ -30,4 +83,147 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #3d2fdb;
+}
+
+/* Styles for buttons */
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.custom-button {
+  background-color: #3d2fdb;
+  color: white;
+  border: none;
+  padding: 20px 30px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.custom-button:hover {
+  background-color: #2c1ebc;
+}
+
+/* Styles for the services section */
+.services-section {
+  margin-top: 300px; /* Adjust the margin to create the scrolling effect */
+  padding: 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.services-section p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Styles for services images */
+.services-images {
+  display: flex;
+  justify-content: space-between; /* Spread items across the container */
+  margin-top: 40px;
+}
+
+.service-item {
+  text-align: left;
+  flex: 1; /* Ensure each item takes up equal space */
+}
+
+.service-item img {
+  width: 100px; /* Adjust the width of the images */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1em;
+}
+/* Home.css */
+/* Home.css */
+
+/* Ensure the why-choose-us section is positioned on the left and aligned left */
+/* Home.css */
+
+/* Ensure the why-choose-us section is positioned on the left and aligned left */
+.why-choose-us {
+  margin-top: 50px; /* Adjust margin to separate from services section */
+  padding: 20px;
+  border-left: 5px solid #3d2fdb; /* Example border color */
+  text-align: left; /* Align text content to the left */
+  width: 80%; /* Adjust width as needed */
+  max-width: 65%; /* Example max-width to limit content width */
+  margin-left: 3%; /* Align to leftmost side */
+  margin-right: auto; /* Align to leftmost side */
+}
+
+.why-choose-us h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.why-choose-us p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Styling for additional information */
+.why-choose-us-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.tick-mark {
+  width: 24px; /* Adjust size of tick mark */
+  margin-right: 10px; /* Space between tick mark and text */
+}
+.company-image {
+  float: right; /* Float the image to the right */
+  margin-left: 20px; /* Adjust margin for spacing */
+  margin-bottom: 200px; /* Adjust margin top */
+}
+
+.company-image img {
+  max-width: 100%; /* Ensure image doesn't overflow */
+}
+.vision-mission-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.vision-mission-card {
+  width: 300px;
+  padding: 20px;
+  background-color: #ffffff; /* Card background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2); /* Blue shadow */
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.vision-mission-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 18px 16px rgba(0, 0, 255, 0.4);
+}
+
+.vision-mission-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.vision-mission-card p {
+  font-size: 16px;
+  color: #666;
 }
